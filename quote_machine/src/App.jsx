@@ -19,7 +19,13 @@ function App () {
     '#1B9C85',
     '#1F8A70',
     '#39B5E0',
-    '#9C254D'
+    '#9C254D',
+    '#482121',
+    '#47A992',
+    '#E57C23',
+    '#643843',
+    '#99627A',
+    '#1D267D'
   ]
 
   const getRandomColor = (colorArray) => {
@@ -51,17 +57,17 @@ function App () {
         style={{ backgroundColor: color }}
       >
         <div id='quote-box' className='container p-5 mb-2'>
-          <p
+          <h3
             id='text'
             style={{ color }}
           >{quote.content}
-          </p>
+          </h3>
           <div className='d-flex justify-content-end'>
-            <p
+            <h5
               id='author'
               style={{ color }}
             >- {quote.author}
-            </p>
+            </h5>
           </div>
           <div className='d-flex justify-content-between mt-4'>
             <button
@@ -76,7 +82,11 @@ function App () {
               id='tweet-quote'
               target='_blank'
               rel='noreferrer'
-            >Twitter
+            >
+              <i
+                className='bi bi-twitter fs-2'
+                style={{ color }}
+              />
             </a>
           </div>
         </div>
