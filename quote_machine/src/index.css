@@ -15,3 +15,8 @@ body {
 #quote-box {
     background-color: white;
 }
+
+.quotes-provided-by,
+.quotes-provided-by a {
+    color: white;
+}
