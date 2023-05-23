@@ -103,7 +103,7 @@ function App () {
           <div ref={quoteTextRef}>
             <h3
               id='text'
-            >{quote.content}
+            >"{quote.content}"
             </h3>
             <div className='d-flex justify-content-end'>
               <h5
@@ -122,7 +122,7 @@ function App () {
             >New Quote
             </button>
             <a
-              href='https://twitter.com/intent/tweet'
+              href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22${quote.content?.replace(/ /g, '%20')}%22%20-%20${quote.author?.replace(/ /g, '%20')}`}
               id='tweet-quote'
               target='_blank'
               rel='noreferrer'
